@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.customcalendarview">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Productivity Assistant"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Money.edit"></activity>
+        <activity android:name=".Money.view" />
+        <activity android:name=".Money.MoneyMainActivity" />
+        <activity android:name=".transaction.addUpdateRecordActivity" />
+        <activity android:name=".transaction.TranscationActivity" />
+        <activity
+            android:name=".Bank.AddActivity"
+            android:label="Transaction"
+            android:parentActivityName=".Bank.BankActivityView" />
+        <activity
+            android:name=".Bank.BankActivityView"
+            android:label="Transaction"
+            android:parentActivityName=".GridView" />
+        <activity android:name=".todolist.ToDoMainActivity" />
+        <activity android:name=".AccountDetailsActivity" />
+        <activity android:name=".BankActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeDemo" />
+        <activity
+            android:name=".GridView"
+            android:theme="@style/AppThemeDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Preference" />
+
+        <receiver
+            android:name=".AlamReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

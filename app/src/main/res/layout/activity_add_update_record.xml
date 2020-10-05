@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transaction.addUpdateRecordActivity">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/profileIv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:civ_border="true"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorGray1"
+        android:src="@drawable/ic_addpoto_black"/>
+
+    <EditText
+        android:id="@+id/nameaccountEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="textPersonName|textCapWords"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_below="@+id/profileIv"
+        android:hint="Account Name"/>
+
+    <EditText
+        android:id="@+id/amountEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_below="@+id/nameaccountEt"
+        android:hint="Account Amount"/>
+
+    <EditText
+        android:id="@+id/dateEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="date"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_below="@+id/amountEt"
+        android:hint="Date dd/mm/yyyy"/>
+
+<EditText
+        android:id="@+id/detailsEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:minHeight="90dp"
+        android:gravity="start"
+        android:inputType="textCapSentences|textMultiLine"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_below="@+id/dateEt"
+        android:hint="Short description"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_done_white"
+        android:layout_margin="10dp"/>
+
+
+
+</RelativeLayout>
